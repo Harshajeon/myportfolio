@@ -1,0 +1,88 @@
+.fa-home{
+  color: #ff7f50;
+  animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px  #f6b8a1;
+  }
+  to {
+    text-shadow: 0 0 30px  #f6b8a1; 
+  }
+}
+
+div>p{
+  font-size: 30px;
+  color: #008080;
+  text-align: center;
+  margin: 30px auto;
+  max-width: 80%;
+}
+
+div>p>span{
+  color: #ff7f50;
+}
+
+.typing-text {
+  overflow: hidden;      
+  white-space: nowrap;    
+  animation: typing 3s steps(40, end) forwards;
+}
+  
+.typing-text::after {
+  content: '|'; 
+  animation: blink 1s steps(2, start) infinite;
+}  
+  
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    to { opacity: 0; }
+}
+
+button{
+  background: transparent;
+  border: none;
+  font-size: larger;
+  margin: 20px auto;
+  display: block;
+  cursor: pointer;
+  color: #008080;
+}
+
+button:hover {
+  color: #ff7f50;
+}
+
+@media only screen and (max-width: 768px) {
+  div>p {
+    font-size: 24px;
+    margin: 20px auto;
+  }
+
+  .typing-text {
+    white-space: normal;
+    animation: none;
+    width: 100%;
+  }
+
+  .typing-text::after {
+    content: '';
+    animation: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  div>p {
+    font-size: 20px;
+    margin: 15px auto;
+  }
+
+  button {
+    font-size: medium;
+  }
+}

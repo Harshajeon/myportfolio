@@ -1,0 +1,170 @@
+.fa-file-text{
+  color: #ff7f50;
+  animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px  #b789ef;
+  }
+  to {
+    text-shadow: 0 0 30px  #b789ef; 
+  }
+}
+
+h2{
+  color: #ff7f50;
+  text-align: center;
+  margin: 20px 0;
+  animation: glow 60s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 50px  #b789ef;
+  }
+  to {
+    text-shadow: 0 0 30px  #b789ef; 
+  }
+}
+
+table{
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+th{
+  color: #ff7f50;
+  font-size: larger;
+  padding: 15px;
+  text-align: center;
+}
+
+td{
+  color: #008080;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: larger;
+  padding: 15px;
+  vertical-align: top;
+}
+
+td>img{
+  width: 100%;
+  max-width: 300px;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  border-style: solid;
+  border-color: #008080;
+  border-radius: 30px;
+  border-width: 3px;
+  margin: 0 auto;
+}
+
+#card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  width: 50%;
+}
+
+#card img {
+  object-fit: cover;
+  display: block;
+}
+
+.smog,.radar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+}
+
+#card:hover .smog {
+  opacity: 1;
+}
+
+#card:hover .radar {
+  opacity: 1;
+}
+
+td>i{
+  color: #ff7f50;
+}
+
+a{
+  color: #008080;
+  text-decoration:none:
+}
+
+.fa-up-right-from-square{
+  color: #ff7f50;
+}
+
+.patent{
+  padding-top: 40px;
+  text-align: center;
+}
+
+
+@media only screen and (max-width: 768px) {
+  table {
+    width: 95%;
+  }
+
+  th, td {
+    padding: 10px;
+    font-size: medium;
+  }
+
+  td>img {
+    height: 150px;
+  }
+
+  .smog, .radar {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  table {
+    display: block;
+  }
+
+  tr {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  th {
+    text-align: left;
+  }
+
+  td {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  #card {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  td>img {
+    max-width: 100%;
+    height: auto;
+  }
+}
