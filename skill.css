@@ -15,7 +15,7 @@ to {
 h2{
   color: #ff7f50;
   text-align: center;
-  margin: 20px 0;
+  margin: 15px 0;
   animation: glow 60s infinite alternate;
 }
 
@@ -87,4 +87,5 @@ th {
   text-align: center;
   border-bottom: 1px solid #ff7f50;
 }
+
 }
